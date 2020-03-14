@@ -7,3 +7,9 @@ Se debe idear y diseñar la UI que se considere mas acorde (No se valoran habili
 uso de componentes).
 Los datos deben ser consumidos de la API desarrollada (en caso de que la prueba lo requiera) o la API
 externa (Si solo se evalúa Front).
+
+## Para correr la app
+
+- Crear un archivo .env con la key de la api de open weather, ejemplo: REACT_APP_ACCESS_KEY={your_key}
+- Correr npm start en la consola.
+- Para comprobar los tests correr npm test.
