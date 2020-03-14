@@ -20,7 +20,7 @@ const LoadingContainer = styled.div`
 const Loading = () => {
 
   return (
-    <LoadingContainer>
+    <LoadingContainer data-testid="loading">
       <p>Loading...</p>
     </LoadingContainer>
   )

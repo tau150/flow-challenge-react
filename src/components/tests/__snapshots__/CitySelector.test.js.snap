@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CitySelector should matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AxjAm ghYKab"
+    data-testid="loading"
+  >
+    <p>
+      Loading...
+    </p>
+  </div>
+</DocumentFragment>
+`;

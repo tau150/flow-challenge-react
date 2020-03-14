@@ -64,7 +64,7 @@ const WeatherDay = ({weather, isFetching}) => {
   return (
     <Card>
       <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt=""/>
-      <h5>{date.getDate()} - {date.getMonth() + 1}  </h5>
+      <h5 data-testid='date-title' >{date.getDate()} - {date.getMonth() + 1}</h5>
       <h4>{description}</h4>
       <p>Min: {min} °C</p>
       <p>Max: {max} °C</p>
@@ -76,7 +76,7 @@ const WeatherDay = ({weather, isFetching}) => {
 
 WeatherDay.Loading = () => {
   return (
-    <LoadingCard>
+    <LoadingCard data-testid="loading-skeleton">
       <div className="image"></div>
       <div className="mainTitle"></div>
       <div className="desc"></div>

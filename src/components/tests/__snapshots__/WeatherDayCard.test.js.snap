@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherDayCard should matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AxjAm ibIlQz"
+  >
+    <img
+      alt=""
+      src="http://openweathermap.org/img/wn/10n@2x.png"
+    />
+    <h5
+      data-testid="date-title"
+    >
+      15 - 3
+    </h5>
+    <h4>
+      some
+    </h4>
+    <p>
+      Min: 2 °C
+    </p>
+    <p>
+      Max: 10 °C
+    </p>
+    <p>
+      Humidity: 30%
+    </p>
+  </div>
+</DocumentFragment>
+`;

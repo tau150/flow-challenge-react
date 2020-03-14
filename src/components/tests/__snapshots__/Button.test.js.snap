@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should matches snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-AxjAm eGcxxL"
+    type="button"
+  />
+</DocumentFragment>
+`;
+
+exports[`Button should render Button with the correct title 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-AxjAm eGcxxL"
+    type="button"
+  >
+    test title
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button should rmatches snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-AxjAm eGcxxL"
+    type="button"
+  />
+</DocumentFragment>
+`;

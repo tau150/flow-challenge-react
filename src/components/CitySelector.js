@@ -26,6 +26,7 @@ const CitySelector = () => {
   const getCityWeather = (list) => {
 
     const firstDay =  {
+      id: 1,
       date: new Date(list[0].dt * 1000),
       icon: list[0].weather[0].icon,
       description: list[0].weather[0].main,
@@ -34,6 +35,7 @@ const CitySelector = () => {
       humidity: list[0].humidity
     }
     const secondDay =  {
+      id: 2,
       date: new Date(list[1].dt * 1000 ),
       icon: list[1].weather[0].icon,
       description: list[1].weather[0].main,
@@ -42,6 +44,7 @@ const CitySelector = () => {
       humidity: list[1].humidity
     }
     const thirdDay =  {
+      id: 3,
       date: new Date(list[2].dt * 1000),
       icon: list[2].weather[0].icon,
       description: list[2].weather[0].main,
@@ -50,6 +53,7 @@ const CitySelector = () => {
       humidity: list[2].humidity
     }
     const fourthDay =  {
+      id: 4,
       date: new Date(list[3].dt * 1000),
       icon: list[3].weather[0].icon,
       description: list[3].weather[0].main,
@@ -58,6 +62,7 @@ const CitySelector = () => {
       humidity: list[3].humidity
     }
     const fivethDay =  {
+      id: 5,
       date: new Date(list[4].dt * 1000),
       icon: list[4].weather[0].icon,
       description: list[4].weather[0].main,
@@ -101,7 +106,7 @@ const CitySelector = () => {
   }
   const renderWeatherCards = () => {
     return selectedCityWeather.map( day => {
-      return <WeatherDayCard isFetching={isFetching} weather={day} />
+      return <WeatherDayCard key={day.id} isFetching={isFetching} weather={day} />
     })
   }
 
@@ -109,7 +114,7 @@ const CitySelector = () => {
   return (
     <Container>
       <h4>Please, select a city</h4>
-      <select onChange={(e) => setSelectedCity(e.target.value)}>
+      <select data-testid='city-select' onChange={(e) => setSelectedCity(e.target.value)}>
         <option value={currentCity}>{currentCity}</option>
         <option value="London">London</option>
         <option value="Paris">Paris</option>
