@@ -5,8 +5,8 @@ import CitySelector from './components/CitySelector';
 function App() {
 
   return (
-    <div className="App">
-      <h1>Weather App testinbg</h1>
+    <div className="App test">
+      <h1>Weather App</h1>
       <CitySelector />
     </div>
   );
