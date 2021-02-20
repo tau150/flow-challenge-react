@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Weather App</h1>
+      <h1>Weather App testinbg</h1>
       <CitySelector />
     </div>
   );
